@@ -21,9 +21,36 @@ Do not present the heads as mystical truth or clinical diagnosis. Treat them as 
 
 ### 1. Choose Mode
 
-Use **onboarding mode** when persona cards do not exist or are weak. Use **council mode** when the user already has enough material for the three heads. Use **calibration mode** after a decision or when the user says a head felt inaccurate.
+Use **profile mode** first: check whether the user already has a Cerberus Profile or persona cards in the current conversation, workspace, or user-provided files. Do not re-onboard a configured user from scratch.
+
+Use **onboarding mode** when no profile exists or the profile is too weak. Use **council mode** when the user already has enough material for the three heads. Use **calibration mode** after a decision or when the user says a head felt inaccurate.
 
 Read [references/templates.md](references/templates.md) when you need exact card, brief, or log templates. Read [references/council-protocol.md](references/council-protocol.md) when running a full deliberation.
+Read [references/productization.md](references/productization.md) when improving setup, storage, onboarding, or reusable user experience.
+
+### 1.5 Profile Persistence
+
+After onboarding, offer to create or update a durable **Cerberus Profile**. The profile should contain only distilled summaries, cards, non-negotiables, and calibration notes, not raw private transcripts.
+
+When a user later asks to run Cerberus:
+
+1. Look for an existing profile or ask the user to provide one.
+2. Load existing cards and ask only what is missing for the current decision.
+3. If cards are stale, perform a short refresh instead of full onboarding.
+4. Save suggested updates separately or ask before overwriting durable files.
+
+Default profile folder when creating files:
+
+```text
+cerberus-profile/
+  profile.yaml
+  cards/
+    alpha.md
+    beta.md
+    gamma.md
+  decisions/
+  logs/
+```
 
 ### 2. Onboarding Mode
 
@@ -35,7 +62,7 @@ Collect, in order:
 
 1. One recent work decision that reveals Alpha.
 2. One recent non-work choice that reveals Beta.
-3. One core identity tension that reveals Gamma.
+3. One core identity, value tension, or non-negotiable domain that reveals Gamma.
 4. The kind of person the user most fears becoming.
 5. What the user least wants to trade away for success.
 6. One real, specific, preferably reversible test decision.
@@ -59,11 +86,13 @@ Create or update Alpha, Beta, and Gamma cards with:
 - `risk_profile` where relevant
 - `blindspots`
 - `vote_rules`
-- Gamma-only `non_negotiables` and `sacrifice_order`
+- Gamma-only `core_identity`, `non_negotiables`, and `sacrifice_order`
 
 Mark every non-obvious claim as `evidence_based`, `user_declared`, or `hypothesis`. Never convert a hypothesis into a fact without user confirmation.
 
 Keep private source details out of reusable public artifacts unless the user explicitly asks to preserve them.
+
+Gamma must be identity-neutral. Never assume gender, family structure, parenthood, marriage, culture, religion, or social role. Ask the user what Gamma should protect. Valid Gamma anchors include family trust, creative life, faith, integrity, health, community, freedom, dignity, responsibility, craft, or any user-defined identity.
 
 ### 4. Prepare Decision Brief
 
@@ -109,6 +138,8 @@ Update cards slowly. Prefer updating after repeated evidence or a major life cha
 - Do not claim to "distill the real person" with certainty.
 - Do not ask for unnecessary private data. Summaries are enough.
 - Do not require articulate self-analysis. Convert vague answers into easier choices and concrete situations.
+- Do not make the user configure Cerberus from scratch every time. Persist and reuse profiles when possible.
+- Do not assume Gamma is masculine, paternal, marital, heterosexual, religious, career-centered, or family-centered. It must be user-defined.
 - Do not encourage impulsive irreversible decisions.
 - Do not use Gamma as a moral dictator. Gamma can veto only when explicit non-negotiables are triggered.
 - Do not make 2:1 votes automatic commands. Convert minority irreversible risks into limits, review points, or stop conditions.

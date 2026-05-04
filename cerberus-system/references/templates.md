@@ -2,6 +2,34 @@
 
 Use these templates when the user wants durable files, explicit cards, or a reusable decision record.
 
+## Cerberus Profile
+
+Use this to avoid repeated setup.
+
+```yaml
+cerberus_profile:
+  version: "0.2"
+  created_at: "YYYY-MM-DD"
+  updated_at: "YYYY-MM-DD"
+  owner_label: "optional"
+  privacy_mode: "summary_only"
+
+status:
+  onboarding_complete: false
+  cards_ready: false
+  last_calibrated: null
+
+gamma_anchor:
+  user_defined_name: ""
+  protected_domains: []
+  identity_notes: "Gamma is user-defined. Do not infer gender, family structure, or social role."
+
+profile_quality:
+  alpha: low
+  beta: low
+  gamma: low
+```
+
 ## Persona Card
 
 ```yaml
@@ -40,6 +68,14 @@ vote_rules:
 core_identity:
   name: ""
   statement: ""
+  user_defined: true
+  identity_assumptions_forbidden:
+    - "gender"
+    - "family structure"
+    - "marital status"
+    - "parenthood"
+    - "religion"
+    - "culture"
 
 non_negotiables:
   - id: G-N01
@@ -58,7 +94,7 @@ Ask conversationally, one at a time:
 
 1. Alpha: "Recently, what work decision best represents how you operate?"
 2. Beta: "Recently, what non-work choice best reveals your real preference?"
-3. Gamma: "If the third head represented one core identity or life tension, what would it be?"
+3. Gamma: "Which part of your life must Cerberus protect from being traded away too casually?"
 4. Anti-identity: "What kind of person do you most fear becoming?"
 5. Non-tradeable: "If success required trading away one thing, what would you least want to trade?"
 6. Test decision: "What real but preferably reversible decision should Cerberus test first?"

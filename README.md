@@ -61,6 +61,8 @@ cerberus-system/
 
 - Conversational onboarding instead of form filling.
 - Adaptive interviewing for users who struggle to describe themselves.
+- Persistent Cerberus Profiles so users do not need to configure the council every time.
+- Identity-neutral Gamma setup that does not assume gender, family structure, or life path.
 - Alpha / Beta / Gamma persona card generation.
 - Four-round council protocol:
   1. independent stance;
@@ -130,6 +132,12 @@ It does **not** include:
 - private life or work data.
 
 Cerberus should usually work from summaries, not raw private archives.
+
+## Reuse Across Sessions
+
+Cerberus supports a persistent profile pattern. After first setup, the agent can save or output a compact Cerberus Profile containing distilled summaries, cards, non-negotiables, and calibration notes.
+
+Future sessions should load that profile and ask only for the current decision, instead of repeating onboarding.
 
 ## Important Boundaries
 

@@ -127,13 +127,14 @@ F. Money/security.
 If the user cannot name a core identity, ask:
 
 ```text
-Which failure would hurt most?
-A. My family can no longer trust me.
-B. I never made anything that felt mine.
-C. I became dishonest or cowardly.
-D. I wasted my ability.
-E. I became someone who only survives.
-F. I hurt people who depended on me.
+Which part of your life must Cerberus protect from being traded away too casually?
+A. People who rely on me.
+B. My health and ability to function.
+C. My integrity.
+D. My creative or inner life.
+E. My freedom.
+F. My long-term self-respect.
+G. Something else.
 ```
 
 Follow-up:
@@ -141,7 +142,7 @@ Follow-up:
 ```text
 If success required a trade, which trade is least acceptable?
 A. Health.
-B. Family trust.
+B. Trust from people who matter to me.
 C. Integrity.
 D. Freedom.
 E. Creativity.
@@ -200,4 +201,3 @@ Prefer:
 - "No problem, let's make it easier. Pick the closest option."
 - "A rough answer is enough."
 - "I'll mark this as tentative and we can correct it later."
-
