@@ -4,6 +4,16 @@ Cerberus is model-agnostic. It does not select a model by itself. The active mod
 
 Use this reference to keep behavior consistent across different LLMs, agent frameworks, context lengths, and tool availability.
 
+## Language Compatibility
+
+Use the user's language for all interaction and output.
+
+- Chinese input: respond in Chinese and call the system `刻耳柏洛斯系统` by default.
+- English input: respond in English and call it `Cerberus System`.
+- Mixed input: follow the dominant language or ask.
+
+Do not expose English-only templates to Chinese users unless they ask for them. Translate headings and operational terms while preserving structure.
+
 ## Triggering
 
 Trigger Cerberus only when the user wants a meaningful decision process or profile-based council.
@@ -16,6 +26,10 @@ Good triggers:
 - "Use my Cerberus profile for this problem."
 - "Calibrate my Cerberus cards."
 - "I want work-self, life-self, and core-identity perspectives to deliberate."
+- "启动刻耳柏洛斯系统。"
+- "用刻耳柏洛斯帮我处理这个决定。"
+- "用 Alpha、Beta、Gamma 三个分身议一下。"
+- "读取我的刻耳柏洛斯画像。"
 
 Avoid triggering for:
 
@@ -29,6 +43,12 @@ If uncertain, ask:
 
 ```text
 Do you want a quick answer, or should I run the full Cerberus council?
+```
+
+Chinese:
+
+```text
+你想要一个快速建议，还是启动完整的刻耳柏洛斯议事流程？
 ```
 
 ## Model Capability Modes
@@ -96,9 +116,20 @@ Recommended simple invocation:
 Use $cerberus-system for this decision.
 ```
 
+Chinese:
+
+```text
+用刻耳柏洛斯系统处理这个决定。
+```
+
 Recommended explicit invocation:
 
 ```text
 Use $cerberus-system to run a three-head council using my existing profile if available.
 ```
 
+Chinese:
+
+```text
+用刻耳柏洛斯系统读取我已有的画像，并为这个决定开一次议事。
+```

@@ -4,6 +4,17 @@
 
 ### Added
 
+- Added language-following policy: Chinese users get Chinese interaction and the product name `刻耳柏洛斯系统`; English users get `Cerberus System`.
+- Added Chinese invocation examples and bilingual UI metadata.
+
+### Changed
+
+- Adjusted product naming guidance to prefer transliteration in Chinese contexts instead of the awkward literal "three-head council" phrasing.
+
+## 2026-05-05
+
+### Added
+
 - Added model and agent compatibility guidance so Cerberus can run across different LLMs and agent frameworks.
 - Added compact, standard, and deep modes based on model capability and context.
 - Added clearer trigger rules to avoid confusing Cerberus with ordinary pros-and-cons lists.

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Cerberus System"
-  short_description: "Three-head council for hard choices"
-  default_prompt: "Use $cerberus-system for this decision."
+  display_name: "Cerberus / 刻耳柏洛斯"
+  short_description: "Three-part council for hard choices"
+  default_prompt: "Use $cerberus-system for this decision. / 用刻耳柏洛斯系统处理这个决定。"

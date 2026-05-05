@@ -1,6 +1,8 @@
-# Cerberus System Skill
+# Cerberus System Skill / 刻耳柏洛斯系统 Skill
 
 **A guided three-head decision council for difficult personal and professional choices.**
+
+**刻耳柏洛斯系统** 是一个用于重大选择的内在分身议事 Skill。它不是普通利弊分析，而是让 Alpha、Beta、Gamma 三个内在部分先独立表态，再交叉质询，最后形成带边界、复盘点和异议记录的决议。
 
 Cerberus System is a Codex skill that helps an AI agent interview a user, build three lightweight decision lenses, and run a structured council before an important choice.
 
@@ -97,7 +99,27 @@ Or:
 Use $cerberus-system to run a three-head council using my existing profile if available.
 ```
 
+Chinese examples:
+
+```text
+用刻耳柏洛斯系统处理这个决定。
+```
+
+```text
+启动刻耳柏洛斯系统，读取我已有的画像，为这个问题开一次议事。
+```
+
 Cerberus does not choose a model by itself. It runs on whichever LLM or agent invokes the skill, then adapts the process to available model strength, context, tools, and user energy.
+
+## Language
+
+The skill should follow the user's language:
+
+- Chinese input: respond in Chinese and call the product **刻耳柏洛斯系统** by default.
+- English input: respond in English and call it **Cerberus System**.
+- Mixed input: follow the dominant language.
+
+The invocation folder remains `cerberus-system` for compatibility.
 
 ## Example Flow
 

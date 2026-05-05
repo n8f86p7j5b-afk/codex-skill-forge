@@ -9,6 +9,19 @@ Use Cerberus as a guided decision process, not as a form-filling task. Ask quest
 
 Cerberus is model-agnostic. It does not choose or require a specific LLM; it runs on whichever agent/model invokes the skill. Adapt depth to model capability and available context.
 
+## Language and Naming
+
+Respond in the user's language. If the user writes in Chinese, run the skill in Chinese and refer to the product as **刻耳柏洛斯系统** unless the user prefers "Cerberus". If the user writes in English, use **Cerberus System**. If the user mixes languages, follow the dominant language or ask briefly.
+
+Do not force English prompts, section titles, or examples into a Chinese conversation. Translate operational terms naturally:
+
+- Profile: 画像 / Profile, depending on user style
+- Council: 议会 / 议事 / council, depending on user style
+- Cross-questioning: 交叉质询
+- Living parts: 活体分身 / 内在分身
+
+The skill name remains `cerberus-system` for invocation compatibility.
+
 ## Core Model
 
 Cerberus has three heads:
