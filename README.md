@@ -1,52 +1,45 @@
-# Cerberus System Skill / 刻耳柏洛斯系统 Skill
+# Cerberus System / 刻耳柏洛斯系统
 
-**A guided three-head decision council for difficult personal and professional choices.**
+**A portable agent skill for inner-part decision councils.**  
+**一个可被主流 AI Agent 使用的内在分身议事 Skill。**
 
-**刻耳柏洛斯系统** 是一个用于重大选择的内在分身议事 Skill。它不是普通利弊分析，而是让 Alpha、Beta、Gamma 三个内在部分先独立表态，再交叉质询，最后形成带边界、复盘点和异议记录的决议。
+刻耳柏洛斯系统不是普通利弊分析，也不只是 Codex 专用技能。它是一套可移植的 Agent 工作流：让 AI Agent 引导用户建立 Alpha、Beta、Gamma 三个内在分身，在重要选择前先独立表态，再交叉质询，最后形成带边界、复盘点和异议记录的决议。
 
-Cerberus System is a Codex skill that helps an AI agent interview a user, build three lightweight decision lenses, and run a structured council before an important choice.
+Cerberus System is a model-agnostic, agent-portable skill/protocol for meaningful decisions. It can be used by Codex-compatible skill runtimes, or adapted into other agent frameworks as plain instructions.
 
-It is designed for moments when a person feels pulled between competing selves:
+## What It Is
 
-- the part that must work, deliver, and survive professionally;
-- the part that has a body, family, emotions, and daily limits;
-- the part that refuses to betray its deepest identity and values.
+Cerberus helps an agent turn internal conflict into a visible deliberation:
 
-Cerberus turns that conflict into a practical deliberation instead of a vague spiral.
+- **Alpha**: the part that must work, deliver, and remain capable in the world.
+- **Beta**: the part that has a body, emotions, relationships, limits, and daily life.
+- **Gamma**: the part that protects core identity, non-negotiables, dignity, and the person the user refuses to become.
 
-## The Three Heads
+The system does not claim to reveal a perfect “true self.” It builds provisional, inspectable decision lenses from user stories, choices, values, and later corrections.
 
-| Head | Role | Core Question |
-|---|---|---|
-| **Alpha** | Work-self | What does this mean for work, execution, responsibility, opportunity, and professional integrity? |
-| **Beta** | Life-self | What does this cost in energy, health, relationships, recovery, and daily life? |
-| **Gamma** | Core-identity self | Does this violate my non-negotiables, dignity, sacrifice order, or the person I refuse to become? |
+## Why It Exists
 
-The system does not claim to reveal a perfect “true self.” It creates provisional, inspectable decision lenses from user stories, choices, values, and corrections.
+Many AI decision prompts collapse into:
 
-## Why Cerberus Exists
+> “Here are the pros and cons.”
 
-Many AI decision prompts are too flat:
-
-> “List pros and cons.”
-
-But real decisions are rarely just pros and cons. They are internal negotiations.
+But hard decisions are rarely just pros and cons. They are internal negotiations.
 
 Should I leave this job?  
 Should I take this opportunity?  
 Should I protect stability or chase creative life?  
 Should I speak up, endure, negotiate, or walk away?
 
-Cerberus helps an agent ask better questions, preserve minority concerns, and produce a decision with:
+Cerberus gives those inner parts a structured room to speak, challenge one another, revise, and then produce a decision with:
 
-- an action;
+- action;
 - boundaries;
 - review points;
 - stop conditions;
 - dissenting views;
 - explicit uncertainty.
 
-## What This Skill Includes
+## Repository Structure
 
 ```text
 cerberus-system/
@@ -56,70 +49,90 @@ cerberus-system/
   references/
     adaptive-interviewing.md
     council-protocol.md
+    living-parts.md
+    model-and-agent-compatibility.md
+    productization.md
     templates.md
 ```
 
-### Key Capabilities
+The `cerberus-system/` folder is packaged as a Codex-compatible Skill, but the core design is framework-neutral. Other agents can use the same Markdown instructions and references as a protocol.
+
+## Core Capabilities
 
 - Conversational onboarding instead of form filling.
 - Adaptive interviewing for users who struggle to describe themselves.
 - Model-agnostic execution across different LLMs and agent frameworks.
 - Persistent Cerberus Profiles so users do not need to configure the council every time.
 - Identity-neutral Gamma setup that does not assume gender, family structure, or life path.
-- Humanized "living parts" so the heads speak from what they protect, fear, and desire, not only from abstract analysis.
+- Humanized “living parts” so the heads speak from what they protect, fear, and desire.
 - Alpha / Beta / Gamma persona card generation.
-- Four-round council protocol:
+- Mandatory four-round process:
   1. independent stance;
   2. cross-questioning;
   3. revised stance;
   4. chair synthesis.
-- Mandatory visible interaction between heads. Cerberus is not valid if it skips cross-questioning and jumps straight to a summary.
+- Visible interaction between heads. Cerberus is not valid if it skips cross-questioning and jumps straight to a summary.
 - Decision logs and calibration rules.
 - Guardrails for privacy, high-stakes decisions, and user agency.
 
-## Quick Start
+## Usage
 
-Install the `cerberus-system/` folder into your Codex skills directory.
+### Codex-Compatible Skill Runtime
 
-Example location:
+Copy `cerberus-system/` into your skills directory, for example:
 
 ```text
 ~/.codex/skills/cerberus-system/
 ```
 
-Then invoke it with:
+Then invoke:
 
 ```text
 Use $cerberus-system for this decision.
 ```
 
-Or:
-
-```text
-Use $cerberus-system to run a three-head council using my existing profile if available.
-```
-
-Chinese examples:
+Chinese:
 
 ```text
 用刻耳柏洛斯系统处理这个决定。
 ```
 
-```text
-启动刻耳柏洛斯系统，读取我已有的画像，为这个问题开一次议事。
-```
+### Other Agent Frameworks
 
-Cerberus does not choose a model by itself. It runs on whichever LLM or agent invokes the skill, then adapts the process to available model strength, context, tools, and user energy.
+If your agent does not support Codex-style skills, use the repository as an instruction package:
+
+1. Load `cerberus-system/SKILL.md`.
+2. Load references only as needed:
+   - `council-protocol.md` for running a full council;
+   - `adaptive-interviewing.md` for users who struggle to express themselves;
+   - `living-parts.md` when the heads feel mechanical;
+   - `model-and-agent-compatibility.md` for weaker models or uncertain environments;
+   - `productization.md` for persistent profiles and reusable UX;
+   - `templates.md` for cards, profiles, briefs, and logs.
+3. Follow the user's language.
+4. Run all four council rounds. Do not replace the council with a generic summary.
 
 ## Language
 
-The skill should follow the user's language:
+The skill follows the user's language:
 
 - Chinese input: respond in Chinese and call the product **刻耳柏洛斯系统** by default.
 - English input: respond in English and call it **Cerberus System**.
 - Mixed input: follow the dominant language.
 
-The invocation folder remains `cerberus-system` for compatibility.
+The folder name remains `cerberus-system` for compatibility.
+
+## Model Behavior
+
+Cerberus does not choose a model by itself. It runs on whichever LLM or agent invokes it.
+
+It adapts to the host model:
+
+- **Compact Mode**: weaker model, short context, or fast use.
+- **Standard Mode**: default experience.
+- **Deep Mode**: stronger model, richer profile, or complex decision.
+
+Even in compact mode, Cerberus must still show Alpha/Beta/Gamma interaction.
 
 ## Example Flow
 
@@ -148,7 +161,7 @@ This makes Cerberus usable for people who are not naturally verbal, reflective, 
 
 ## Privacy
 
-This repository contains only reusable skill instructions and generic templates.
+This repository contains only reusable instructions and generic templates.
 
 It does **not** include:
 
@@ -166,22 +179,22 @@ Cerberus supports a persistent profile pattern. After first setup, the agent can
 
 Future sessions should load that profile and ask only for the current decision, instead of repeating onboarding.
 
-## Important Boundaries
+## Boundaries
 
 Cerberus is reflective decision support, not a replacement for the user’s judgment.
 
 It should not be treated as professional medical, legal, financial, psychological, or safety advice. For high-stakes decisions, the skill instructs the agent to frame the output as reflection only and recommend appropriate professional support.
 
-Gamma also should not become a moral dictator. It can veto only when explicit user-declared non-negotiables are triggered.
+Gamma should not become a moral dictator. It can veto only when explicit user-declared non-negotiables are triggered.
 
-## Repository Status
+## Status
 
-This is an early public skill package. The core protocol is usable, but the system will improve with real-world calibration:
+This is an early public skill/protocol package. The core protocol is usable, but the system will improve with real-world calibration:
 
 - better onboarding question banks;
 - more example councils;
 - multilingual refinements;
-- compatibility testing across different LLMs;
+- compatibility testing across different LLMs and agent frameworks;
 - optional scripts for generating local Cerberus workspaces.
 
 ## License

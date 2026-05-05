@@ -4,6 +4,17 @@
 
 ### Added
 
+- Reworked README positioning to describe Cerberus as a portable agent skill/protocol, not only a Codex skill.
+- Added usage guidance for both Codex-compatible skill runtimes and other agent frameworks.
+
+### Changed
+
+- Clarified that `cerberus-system/` is a Codex-compatible package format, while the core protocol is framework-neutral.
+
+## 2026-05-05
+
+### Added
+
 - Added language-following policy: Chinese users get Chinese interaction and the product name `刻耳柏洛斯系统`; English users get `Cerberus System`.
 - Added Chinese invocation examples and bilingual UI metadata.
 
