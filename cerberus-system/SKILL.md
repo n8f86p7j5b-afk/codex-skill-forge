@@ -115,11 +115,13 @@ For high-stakes medical, legal, financial, mental health, or safety decisions, f
 Use the four-round protocol:
 
 1. **Independent stance**: each head answers without seeing the others.
-2. **Cross-questioning**: heads challenge one another.
+2. **Cross-questioning**: heads challenge one another. This round is mandatory and must not be skipped, even when all three heads initially agree.
 3. **Revised stance**: each head updates or holds position.
 4. **Chair synthesis**: summarize votes, decision, limits, review point, stop conditions, and dissent.
 
 The chair is procedural, not a fourth personality. It must not introduce new values that the heads did not raise.
+
+Do not compress the council into a summary. A valid Cerberus output must show visible interaction among the heads: initial independent stances, direct questions, answers, self-blindspots, revised stances, and then synthesis. If the user asks for a short answer, keep each section concise but preserve all four rounds.
 
 ### 6. Log and Calibrate
 
@@ -143,6 +145,7 @@ Update cards slowly. Prefer updating after repeated evidence or a major life cha
 - Do not encourage impulsive irreversible decisions.
 - Do not use Gamma as a moral dictator. Gamma can veto only when explicit non-negotiables are triggered.
 - Do not make 2:1 votes automatic commands. Convert minority irreversible risks into limits, review points, or stop conditions.
+- Do not skip cross-questioning. Without visible interaction between Alpha, Beta, and Gamma, the output is not a Cerberus council.
 - Keep the user's final choice sovereign.
 
 ## Output Style

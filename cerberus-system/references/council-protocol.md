@@ -6,6 +6,8 @@ Use this when running a full deliberation.
 
 Generate each head independently from its card and the same decision brief. Do not let one head's reasoning influence the next.
 
+This round must be visibly separated from later rounds. Do not summarize all heads into one blended answer.
+
 For each head:
 
 ```markdown
@@ -22,7 +24,36 @@ For each head:
 
 ## Round 2: Cross-Questioning
 
-Reveal stances. Each head asks one sharp question to another head. The challenged head answers. Each head also names one possible blindspot in its own reasoning.
+Reveal stances. This round is mandatory. Do not skip it, even when the initial votes are unanimous.
+
+Each head must:
+
+1. ask one sharp question to another named head;
+2. receive a direct answer from the challenged head;
+3. name one possible blindspot in its own reasoning.
+
+Minimum valid structure:
+
+```markdown
+## Round 2: Cross-Questioning
+
+### Alpha challenges Beta
+- Question:
+- Beta answers:
+- Alpha self-blindspot:
+
+### Beta challenges Gamma
+- Question:
+- Gamma answers:
+- Beta self-blindspot:
+
+### Gamma challenges Alpha
+- Question:
+- Alpha answers:
+- Gamma self-blindspot:
+```
+
+The challenge direction can change, but there must be at least three directed challenges and three direct answers.
 
 Example patterns:
 
@@ -31,6 +62,8 @@ Example patterns:
 - Gamma to Alpha: "Does this success require becoming someone the user rejects?"
 
 ## Round 3: Revised Stance
+
+Round 3 must explicitly respond to Round 2. A head may keep its original vote, but it must state what it learned or refused to accept from the challenge.
 
 For each head:
 
@@ -47,6 +80,7 @@ For each head:
 ## Round 4: Chair Synthesis
 
 The chair only synthesizes. It does not add a new value system.
+The chair must cite the actual Round 2 conflict or challenge that most affected the final limits, review point, or stop conditions.
 
 ```markdown
 # Cerberus Decision
@@ -86,3 +120,16 @@ Left for the user to add.
 - 2:1: output a recommended decision; convert minority irreversible risks into limits or stop conditions.
 - Three incompatible positions: do not force consensus. Return the decision to the user and summarize the conflict.
 - Gamma veto: allowed only when an explicit non-negotiable is triggered. Include the triggered item, reason, possible repair conditions, and consequence if ignored.
+
+## Validity Checklist
+
+Before producing the final answer, verify:
+
+- Round 1 includes separate Alpha, Beta, and Gamma initial stances.
+- Round 2 includes at least three named challenges.
+- Round 2 includes direct answers from challenged heads.
+- Round 2 includes self-blindspots.
+- Round 3 includes revised stances that mention what changed or stayed firm after questioning.
+- Round 4 includes synthesis, action, limits, review point, stop conditions, and dissent if any.
+
+If any item is missing, complete that round before giving the final decision.

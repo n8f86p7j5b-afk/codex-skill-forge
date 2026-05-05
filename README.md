@@ -69,6 +69,7 @@ cerberus-system/
   2. cross-questioning;
   3. revised stance;
   4. chair synthesis.
+- Mandatory visible interaction between heads. Cerberus is not valid if it skips cross-questioning and jumps straight to a summary.
 - Decision logs and calibration rules.
 - Guardrails for privacy, high-stakes decisions, and user agency.
 
