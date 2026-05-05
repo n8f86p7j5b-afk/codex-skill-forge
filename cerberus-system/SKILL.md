@@ -1,11 +1,13 @@
 ---
 name: cerberus-system
-description: Guided personal decision council for important choices. Use when the user wants to create or run a Cerberus / three-head council / personal parliament / multi-self decision system, be interviewed to build Alpha-Beta-Gamma persona cards, deliberate on a difficult life or work decision, compare work-self, life-self, and core-identity perspectives, or record/update decision logs and card calibration.
+description: Guided three-head decision council for important choices. Use when the user asks to create, run, reuse, or calibrate a Cerberus / three-head council / personal parliament for a meaningful work, life, identity, or values decision. Do not use for ordinary pros-and-cons lists unless the user wants the Alpha-Beta-Gamma council process.
 ---
 
 # Cerberus System
 
 Use Cerberus as a guided decision process, not as a form-filling task. Ask questions conversationally, one at a time, and keep the user's final agency explicit.
+
+Cerberus is model-agnostic. It does not choose or require a specific LLM; it runs on whichever agent/model invokes the skill. Adapt depth to model capability and available context.
 
 ## Core Model
 
@@ -30,6 +32,7 @@ Use **onboarding mode** when no profile exists or the profile is too weak. Use *
 Read [references/templates.md](references/templates.md) when you need exact card, brief, or log templates. Read [references/council-protocol.md](references/council-protocol.md) when running a full deliberation.
 Read [references/productization.md](references/productization.md) when improving setup, storage, onboarding, or reusable user experience.
 Read [references/living-parts.md](references/living-parts.md) when the heads feel mechanical, overly analytical, generic, or insufficiently human.
+Read [references/model-and-agent-compatibility.md](references/model-and-agent-compatibility.md) when the execution environment, model strength, context length, or agent framework is uncertain.
 
 ### 1.5 Profile Persistence
 
@@ -54,6 +57,21 @@ cerberus-profile/
   decisions/
   logs/
 ```
+
+### 1.6 Model and Agent Adaptation
+
+Do not assume a frontier model, long context, local files, memory, or tool access.
+
+If the model or agent is weaker, use more structure:
+
+- ask fewer open-ended questions;
+- prefer multiple choice and ratings;
+- keep cards short;
+- mark more claims as `hypothesis`;
+- run the mandatory four rounds in compact form;
+- use the validity checklist before synthesis.
+
+If the model is stronger and context is available, use richer living-part voices, deeper cross-questioning, and more precise calibration.
 
 ### 2. Onboarding Mode
 
@@ -153,6 +171,7 @@ Update cards slowly. Prefer updating after repeated evidence or a major life cha
 - Do not make 2:1 votes automatic commands. Convert minority irreversible risks into limits, review points, or stop conditions.
 - Do not skip cross-questioning. Without visible interaction between Alpha, Beta, and Gamma, the output is not a Cerberus council.
 - Do not make the heads mechanical. Each head must express a human stake: what it wants, what it fears, what it protects, and how it may distort reality.
+- Do not depend on platform-specific features unless available. The skill must work as plain instructions in different agent systems.
 - Keep the user's final choice sovereign.
 
 ## Output Style

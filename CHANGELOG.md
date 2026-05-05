@@ -4,6 +4,19 @@
 
 ### Added
 
+- Added model and agent compatibility guidance so Cerberus can run across different LLMs and agent frameworks.
+- Added compact, standard, and deep modes based on model capability and context.
+- Added clearer trigger rules to avoid confusing Cerberus with ordinary pros-and-cons lists.
+
+### Changed
+
+- Simplified skill invocation and OpenAI UI metadata.
+- Clarified that Cerberus does not select a model; it adapts to the active host model.
+
+## 2026-05-05
+
+### Added
+
 - Added "living parts" guidance so Alpha, Beta, and Gamma speak from protective impulses, fears, desires, sensitivities, and voice texture instead of sounding like mechanical analysis columns.
 - Added `living_signature` to persona card templates.
 

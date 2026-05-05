@@ -1,4 +1,4 @@
 interface:
   display_name: "Cerberus System"
-  short_description: "Guided three-head decision council"
-  default_prompt: "Use $cerberus-system to guide me through a three-head decision council for an important choice."
+  short_description: "Three-head council for hard choices"
+  default_prompt: "Use $cerberus-system for this decision."

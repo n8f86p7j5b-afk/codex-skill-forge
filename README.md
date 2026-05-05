@@ -61,6 +61,7 @@ cerberus-system/
 
 - Conversational onboarding instead of form filling.
 - Adaptive interviewing for users who struggle to describe themselves.
+- Model-agnostic execution across different LLMs and agent frameworks.
 - Persistent Cerberus Profiles so users do not need to configure the council every time.
 - Identity-neutral Gamma setup that does not assume gender, family structure, or life path.
 - Humanized "living parts" so the heads speak from what they protect, fear, and desire, not only from abstract analysis.
@@ -87,14 +88,16 @@ Example location:
 Then invoke it with:
 
 ```text
-Use $cerberus-system to guide me through a three-head decision council for an important choice.
+Use $cerberus-system for this decision.
 ```
 
 Or:
 
 ```text
-Use $cerberus-system to help me decide whether I should leave my current job.
+Use $cerberus-system to run a three-head council using my existing profile if available.
 ```
+
+Cerberus does not choose a model by itself. It runs on whichever LLM or agent invokes the skill, then adapts the process to available model strength, context, tools, and user energy.
 
 ## Example Flow
 
