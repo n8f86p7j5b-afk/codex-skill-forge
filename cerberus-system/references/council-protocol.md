@@ -13,6 +13,9 @@ For each head:
 ```markdown
 ## Initial Stance
 
+- What I am trying to protect:
+- What I am afraid of:
+- What I want for the user:
 - Vote: support / oppose / conditionally support / abstain
 - Core reason:
 - Benefits seen:
@@ -25,6 +28,7 @@ For each head:
 ## Round 2: Cross-Questioning
 
 Reveal stances. This round is mandatory. Do not skip it, even when the initial votes are unanimous.
+Questions should come from each head's living stake, not just from abstract analysis.
 
 Each head must:
 
@@ -81,6 +85,7 @@ For each head:
 
 The chair only synthesizes. It does not add a new value system.
 The chair must cite the actual Round 2 conflict or challenge that most affected the final limits, review point, or stop conditions.
+The chair should preserve the human conflict before translating it into action.
 
 ```markdown
 # Cerberus Decision
@@ -126,6 +131,7 @@ Left for the user to add.
 Before producing the final answer, verify:
 
 - Round 1 includes separate Alpha, Beta, and Gamma initial stances.
+- Round 1 includes what each head protects, fears, and wants.
 - Round 2 includes at least three named challenges.
 - Round 2 includes direct answers from challenged heads.
 - Round 2 includes self-blindspots.

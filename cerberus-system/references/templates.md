@@ -43,6 +43,15 @@ identity_signature:
   primary_question: ""
   forbidden_question: ""
 
+living_signature:
+  protective_impulse: ""
+  desire: ""
+  fear: ""
+  sensitivity: ""
+  body_signal: ""
+  voice_texture: ""
+  distortion_risk: ""
+
 decision_patterns:
   - id: ""
     type: evidence_based | user_declared | hypothesis

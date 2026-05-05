@@ -63,6 +63,7 @@ cerberus-system/
 - Adaptive interviewing for users who struggle to describe themselves.
 - Persistent Cerberus Profiles so users do not need to configure the council every time.
 - Identity-neutral Gamma setup that does not assume gender, family structure, or life path.
+- Humanized "living parts" so the heads speak from what they protect, fear, and desire, not only from abstract analysis.
 - Alpha / Beta / Gamma persona card generation.
 - Four-round council protocol:
   1. independent stance;

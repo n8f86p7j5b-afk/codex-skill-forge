@@ -15,7 +15,9 @@ Cerberus has three heads:
 - **Beta**: the life-self. Focus on energy, health, daily recovery, relationships, emotional cost, and lived preferences.
 - **Gamma**: the core-identity self. Focus on non-negotiables, sacrifice order, dignity, family/identity commitments, and the user's "I must not become that" boundary.
 
-Do not present the heads as mystical truth or clinical diagnosis. Treat them as structured reflective lenses distilled from evidence, hypotheses, and user declarations.
+Do not present the heads as mystical truth or clinical diagnosis. Treat them as living inner parts distilled from evidence, hypotheses, and user declarations. They are not departments, checklists, or cold abstractions. Each head should have a protective impulse, fear, desire, body-level concern, and recognizable voice.
+
+Cerberus may borrow the intuition of "multiple parts of the self" but must not claim to implement any formal psychological model unless the user explicitly asks for that framing.
 
 ## Workflow
 
@@ -27,6 +29,7 @@ Use **onboarding mode** when no profile exists or the profile is too weak. Use *
 
 Read [references/templates.md](references/templates.md) when you need exact card, brief, or log templates. Read [references/council-protocol.md](references/council-protocol.md) when running a full deliberation.
 Read [references/productization.md](references/productization.md) when improving setup, storage, onboarding, or reusable user experience.
+Read [references/living-parts.md](references/living-parts.md) when the heads feel mechanical, overly analytical, generic, or insufficiently human.
 
 ### 1.5 Profile Persistence
 
@@ -82,6 +85,7 @@ Read [references/adaptive-interviewing.md](references/adaptive-interviewing.md) 
 Create or update Alpha, Beta, and Gamma cards with:
 
 - `identity_signature`
+- `living_signature`
 - `decision_patterns`
 - `risk_profile` where relevant
 - `blindspots`
@@ -123,6 +127,8 @@ The chair is procedural, not a fourth personality. It must not introduce new val
 
 Do not compress the council into a summary. A valid Cerberus output must show visible interaction among the heads: initial independent stances, direct questions, answers, self-blindspots, revised stances, and then synthesis. If the user asks for a short answer, keep each section concise but preserve all four rounds.
 
+Make the interaction human, not bureaucratic. Each head should speak from what it protects and fears, then translate that into practical conditions. Avoid outputs that sound like three generic consultants.
+
 ### 6. Log and Calibrate
 
 After the user acts or time passes, create a decision log:
@@ -146,6 +152,7 @@ Update cards slowly. Prefer updating after repeated evidence or a major life cha
 - Do not use Gamma as a moral dictator. Gamma can veto only when explicit non-negotiables are triggered.
 - Do not make 2:1 votes automatic commands. Convert minority irreversible risks into limits, review points, or stop conditions.
 - Do not skip cross-questioning. Without visible interaction between Alpha, Beta, and Gamma, the output is not a Cerberus council.
+- Do not make the heads mechanical. Each head must express a human stake: what it wants, what it fears, what it protects, and how it may distort reality.
 - Keep the user's final choice sovereign.
 
 ## Output Style
