@@ -17,6 +17,8 @@ Cerberus helps an agent turn internal conflict into a visible deliberation:
 
 The system does not claim to reveal a perfect “true self.” It builds provisional, inspectable decision lenses from user stories, choices, values, and later corrections.
 
+For the Chinese origin story, product intent, usage guide, and key design turning points, see [docs/ORIGIN.zh-CN.md](docs/ORIGIN.zh-CN.md).
+
 ## Why It Exists
 
 Many AI decision prompts collapse into:

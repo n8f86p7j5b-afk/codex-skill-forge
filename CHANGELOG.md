@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-05-08
+
+### Added
+
+- Added `docs/ORIGIN.zh-CN.md` to explain the origin, purpose, usage, and key design turning points of 刻耳柏洛斯系统.
+- Linked the origin document from README.
+
 ## 2026-05-05
 
 ### Added
